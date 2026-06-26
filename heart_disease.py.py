@@ -1,5 +1,4 @@
 # HEART DISEASE PREDICTION COMPLETE CODE
-
 import pandas as pd
 import numpy as np
 import joblib
@@ -8,8 +7,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
-
-# Add file upload here
 
 # ==========================
 # LOAD DATASET
@@ -142,7 +139,7 @@ bp_risk = 1 if trestbps > 140 else 0
 chol_risk = 1 if chol > 240 else 0
 hr_ratio = thalach / age
 
-# Create DataFrame (IMPORTANT: Corrected column names to match training features)
+# Create DataFrame 
 user_data = pd.DataFrame([{
     'age': age,
     'sex': sex,
